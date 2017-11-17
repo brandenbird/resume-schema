@@ -231,6 +231,38 @@
         }
       }
     },
+    "certifications":{
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "organization": {
+            "type": "string",
+            "description": "e.g. AWS"
+          },
+          "certificate": {
+            "type": "string",
+            "description": "AWS Certified Developer – Associate (DVA)"
+          },
+          "startDate": {
+            "type": "string",
+            "description": "e.g. 2017-10-15",
+            "format": "date"
+          },
+          "endDate": {
+            "type": "string",
+            "description": "e.g. 2019-10-15",
+            "format": "date"
+          },
+          "url": {
+            "type": "string",
+            "description": "e.g. https://www.certmetrics.com/amazon/public/transcript.aspx"
+          }
+        }
+      }
+    },
     "awards": {
       "type": "array",
       "description": "Specify any awards you have received throughout your professional career",
